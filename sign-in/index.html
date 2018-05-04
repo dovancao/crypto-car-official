@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crypto Car</title>
+    <link rel="stylesheet" type="text/css" href="/main.css">
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+</head>
+<body>
+<div id="app">
+    <div class="App">
+        <div class ="Header-container Header-container-fixed">
+            <div class="Header">
+                <div class="Header-group Header-group-home">
+                    <a class="Header-home active" aria-current="true" href="/">
+                        <h1 class="Header-wordmark">CryptoCars</h1>
+                    </a>
+                </div>
+                <div class="Header-group">
+                    <a id="startgr" class="Header-navigation-item" aria-current="false" href="/sign-in">Start GR</a>
+                    <a class="Header-navigation-item" aria-current="false" href="/marketplace">Marketplace</a>
+                    <a class="Header-navigation-item" aria-current="false" href="/parking">Parking</a>
+                </div>
+                <div class="Header-group">
+                    <div class="Header-secondaryNav-wide">
+                        <a class="Header-navigation-item" aria-current="false" href="/faq">FAQs</a>
+                        <a target="_blank" href="https://medium.com/cryptokities" class="Header-navigation-item">Blog</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class ="Main">
+            <div class="Hero">
+                <div class="Container Container--sm Container--center">
+                    <h2 class="Hero-h2">Welcome to CryptoCars</h2>
+                    <p class="Hero-description">To get started, please enter your email address and nickname.</p>
+                    <div class="SetiingsForm">
+                        <form>
+                            <div class="Section">
+                                //<img> tai day
+                            </div>
+                            <div class="Section">
+                                <p class="InputButtons-group">
+                                    <label for="address">Wallet address</label>
+                                    <input type="text" id="address" name="address" class="InputButtons InputButtons-input InputButtons--readonly" placeholder="Wallet address" maxlength="100" readonly value="">
+                                </p>
+                            </div>
+                            <div class="Section">
+                                <p class="InputButtons-group">
+                                    <label for="email">Email address</label>
+                                    <input type="email" id="email" name="email" class="InputButtons InputButtons-input" placeholder="example@cryptocars.co" value maxlength="100" autocapitalize="off" autocorrect="off">
+                                </p>
+                            </div>
+                            <div class="Section">
+                                <p class="InputButtons-group">
+                                    <label for="nickname">Nickname</label>
+                                    <input type="nickname" id="nickname" name="nickname" class="InputButtons InputButtons-input" placeholder="Amumu" value maxlength="100" autocapitalize="off" autocorrect="off">
+                                </p>
+                            </div>
+                            <div class="Section">
+                                <div class="Note note--margins Note--warning">
+                                    "Make sure to save your MetaMask login information and account recovery details! We can’t help you regain access if you lose it."
+                                </div>
+                            </div>
+                            <div class="Section">
+                                <button onclick="replacePage" class="Button Button--disabled Button--love Button--larger">Save account info</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="Footer">
+            <div class="Container Container--lg">
+                <div class="Footer-primary">
+                    <div class="Footer-nav">
+                        <div class="Footer-nav-items">
+                            <ul class="Footer-nav-items">
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--mykities" aria-current="false" href="/my-cars">My Cars</a>
+
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--activity" aria-current="false" href="/activity">Activity</a>
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--marketplace" aria-current="false" href="/marketplace">Marketplace</a>
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--mypark" aria-current="false" href="/mypark">My Park</a>
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--help" aria-current="false" href="/help&support">Help & Support</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Footer-nav">
+                        <div class="Footer-nav-items">
+                            <ul class="Footer-nav-items">
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--about" aria-current="false" href="/about">About</a>
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--updates" href="https://updates.cryptocars.co" target="_blank" rel="noopener noreferrer">Lastest updates</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Footer-nav">
+                        <div class="Footer-nav-items">
+                            <ul class="Footer-nav-items">
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--facebook" href="https://www.facebook.com/CryptoCars" target="_blank" rel="noopener noreferrer">Facebook</a>
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--reddit" href="https://www.reddit.com/r/CryptoCars/" target="_blank" rel="noopener noreferrer">Reddit</a>
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--twitter" href="https://twitter.com/cryptocars" target="_blank" rel="noopener noreferrer">Twitter</a>
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--discord" href="https://discord.gg/NBpZtW" target="_blank" rel="noopener noreferrer">Discord</a>
+                                </li>
+                                <li class="Footer-nav-item">
+                                    <a class="Footer-nav-link Footer-nav-link--email" aria-current="false" href="/contact">Email us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Footer-secondary">
+                    <a class="Footer-secondary-link" aria-current="false" href="/term-of-use">Term of use</a>
+                    <a class="Footer-secondary-link" aria-current="false" href="/privacy-policy">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script>
+    $("#startgr").click(function(){
+        if(typeof web3 !== 'indefined'){
+            web3js = new Web3(web3.currentProvider);
+        } else {
+            console.log('Your Metamask is locked ')
+        }
+    }
+
+    $("#button").click(function(){
+        if($('#email').val() === "" || $('#nickname').val()=== ""){
+            alert("Please fill your form");
+            return false;
+        }else
+        {
+           Cookies.set('email','('#email').val()',{expires: 30});
+           Cookies.set('nickname','$('#nickname').val()',{expires:30});
+        }
+    });
+
+
+    function replacePage(){
+        window.location.replace('');
+    }
+
+</script>
+
+
+</body>
+</html>

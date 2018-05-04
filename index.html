@@ -23,7 +23,7 @@
                      <a class="Header-navigation-item" aria-current="false" href="/marketplace">Marketplace</a>
                     <a class="Header-navigation-item" aria-current="false" href="/parking">Parking</a>
                  </div>
-                 <div class="Header-group>">
+                 <div class="Header-group">
                      <div class="Header-secondaryNav-wide">
                          <a class="Header-navigation-item" aria-current="false" href="/faq">FAQs</a>
                          <a target="_blank" href="https://medium.com/cryptokities" class="Header-navigation-item">Blog</a>
@@ -112,7 +112,11 @@
 
 
  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-
+ <script>
+     $(window).resize(function(){
+        $("body").prepend("<div>" +$(window).width() + "</div>");
+     });
+ </script>
 
 </body>
 </html>

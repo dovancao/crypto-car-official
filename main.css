@@ -1,5 +1,5 @@
 body {
-    font-family: Calibre,Helvetica,Arial,sans-serif
+    font-family: Calibre,Helvetica,Arial,sans-serif;
     background-color: #fff;
     font-size: 15px;
     line-height: 1.5;
@@ -63,4 +63,88 @@ div {
     width: 91px;
     height: 30px;
     margin-left: 30px;
+}
+
+
+.Container--lg {
+    width: 1056px;
+    height: 208px;
+    padding: 0 32px 0 32px;
+    margin: 0 114.5px 0 114.5px;
+
+}
+.Footer-primary {
+    display : flex;
+    -webkit-box-direction: normal;
+    width: 1056px;
+    height: 120px;
+}
+
+.Footer-nav {
+    -webkit-box-flex: 1;
+    flex: 1;
+    width: 264px;
+    height: 120px;
+}
+
+.Footer-nav-item {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    width: 264px;
+    height: 24px;
+}
+
+.Footer-nav-link {
+    color: #82817d;
+    transition: color .25s;
+}
+
+.Footer-nav-link:hover {
+    color: #2a2825;
+}
+
+.Footer-nav-link--facebook {
+    color: #3a5998;
+}
+
+.Footer-nav-link--reddit {
+    color: #fd4404;
+}
+
+.Footer-nav-link--twitter {
+    color: #1ba1f3;
+}
+
+.Footer-nav-link--discord {
+    color: #7289da;
+}
+.Footer-nav-link--email {
+    color: #ef52d1;
+}
+
+.Footer-secondary {
+    -webkit-box-pack : center;
+    justify-content: center;
+    display: flex;
+    width: 1056px;
+    height: 24px;
+    margin: 64px;
+}
+
+.Footer-secondary-link {
+    color: #82817d;
+    font-size: 13px;
+    transition: color .25s;
+    width: 90px;
+    height: 24px;
+    margin: 0 24px 0 24px;
 }
